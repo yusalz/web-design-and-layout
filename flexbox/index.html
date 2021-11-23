@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <title>Flex-layout</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="flexHeader">
+                <div class="logo">NewsExplorer</div>
+                <nav class='menu hideMenu'>
+                    <div class="main">Главная</div>
+                    <div class="save menuFlag">Сохраненные статьи</div>
+                    <button class="logout">Грета <img alt="icon" src="./img/logout.svg"/></button>
+                </nav>
+                <img class="hideMobileMenu" alt="icon" src="./img/menu.png"/>
+            </div>
+        </div>
+    </header>
+    <section class="container">
+        <div class="info">
+            <p>Сохраненные статьи</p>
+            <h1>Грета, у вас 5 <br> сохранённых статей</h1>
+            <div>По ключевым словам: <strong>Природа, Тайга</strong> и <strong>2-м другим</strong></div>
+        </div>
+    </section>
+    <section class="content">
+            <div class="containerCards">
+                <div class="cardFlexContainer">
+                    <div class="card">
+                        <img class="image" src="./img/image_06.jpg" alt="image_06">
+                        <div class="activeBtnFlex">
+                            <div class="keyWord">Природа</div>
+                            <div class="activeBtnFlexInner">
+                                <div class="deleteCard">Убрать из сохраненных</div>
+                                <div class="trash"><img src="./img/trash.svg" alt="trash"></div>
+                            </div>
+                        </div>
+                        <p class="cardDate">2 августа, 2019</p>
+                        <h2 class="title">Национальное достояние – парки</h2>
+                        <p class="description"> В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                        <p class="tag">Дзен</p>
+                    </div>
+                    <div class="card">
+                        <img class="image" src="./img/image_01.jpg" alt="image_01">
+                        <div class="activeBtnFlex">
+                            <div class="keyWord">Природа</div>
+                            <div class="activeBtnFlexInner">
+                                <div class="deleteCard">Убрать из сохраненных</div>
+                                <div class="trash"><img src="./img/trash.svg" alt="trash"></div>
+                            </div>
+                        </div>
+                        <p class="cardDate">2 августа, 2019</p>
+                        <h2 class="title">Лесные огоньки: история одной фотографии</h2>
+                        <p class="description"> Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного
+                            из местных чудес природы.</p>
+                        <p class="tag">Афиша</p>
+                    </div>
+                    <div class="card">
+                        <img class="image" src="./img/image_05.jpg" alt="image_05">
+                        <div class="activeBtnFlex">
+                            <div class="keyWord">Тайга</div>
+                            <div class="activeBtnFlexInner">
+                                <div class="deleteCard">Убрать из сохраненных</div>
+                                <div class="trash"><img src="./img/trash.svg" alt="trash"></div>
+                            </div>
+                        </div>
+                        <p class="cardDate">2 августа, 2019</p>
+                        <h2 class="title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h2>
+                        <p class="description"> Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+                        <p class="tag">Медиазона</p>
+                    </div>
+                    <div class="card">
+                        <img class="image" src="./img/image_06.jpg" alt="image_06">
+                        <div class="activeBtnFlex">
+                            <div class="keyWord">Природа</div>
+                            <div class="activeBtnFlexInner">
+                                <div class="deleteCard">Убрать из сохраненных</div>
+                                <div class="trash"><img src="./img/trash.svg" alt="trash"></div>
+                            </div>
+                        </div>
+                        <p class="cardDate">2 августа, 2019</p>
+                        <h2 class="title">Национальное достояние – парки</h2>
+                        <p class="description"> В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                        <p class="tag">Дзен</p>
+                    </div>
+                    <div class="card">
+                        <img class="image" src="./img/image_01.jpg" alt="image_01">
+                        <div class="activeBtnFlex">
+                            <div class="keyWord">Природа</div>
+                            <div class="activeBtnFlexInner">
+                                <div class="deleteCard">Убрать из сохраненных</div>
+                                <div class="trash"><img src="./img/trash.svg" alt="trash"></div>
+                            </div>
+                        </div>
+                        <p class="cardDate">2 августа, 2019</p>
+                        <h2 class="title">Лесные огоньки: история одной фотографии</h2>
+                        <p class="description"> Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного
+                            из местных чудес природы.</p>
+                        <p class="tag">Афиша</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="flexFooter">
+                <div class="footerText">© 2020 Supersite, Powered by News API</div>
+                    <div class="textAndIconsFlex">
+                        <nav class='footerMenu'>
+                            <div class="mainFooter">Главная</div>
+                            <div class="yaProfi">Яндекс.Практикум</div>
+                        </nav>
+                        <div class="iconsFooter">
+                            <img class="icon1"alt="icon" src="./img/github.png"/>
+                            <img alt="icon" src="./img/fb.png"/>
+                        </div>
+                 </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
