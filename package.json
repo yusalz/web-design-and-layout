@@ -1,0 +1,26 @@
+{
+    "private": true,
+    "scripts": {
+      "start": "browser-sync start --server . --no-notify --no-ui --cwd . --files index.html,flexbox/**/*,grid/**/*",
+      "test": "editorconfig-checker",
+      "html": "html-minifier --remove-comments --collapse-whitespace --input-dir . --output-dir dist --file-ext html",
+      "flexbox-styles": "postcss flexbox/style/style.css --use postcss-import --use postcss-csso --no-map --output dist/flexbox/style/style.css",
+      "grid-styles": "postcss grid/style/style.css --use postcss-import --use postcss-csso --no-map --output dist/grid/style/style.css",
+      "grid-images": "copyfiles grid/img/* dist",
+      "flexbox-images": "copyfiles flexbox/img/* dist",
+      "build": "npm run html && npm run flexbox-styles && npm run grid-styles && npm run flexbox-images && npm run grid-images",
+      "serve": "serve"
+    },
+    "devDependencies": {
+      "browser-sync": "^2.26.7",
+      "editorconfig-checker": "^3.1.0",
+      "html-minifier": "^4.0.0",
+      "postcss-cli": "^7.1.1",
+      "postcss-csso": "^4.0.0",
+      "postcss-import": "^12.0.1",
+      "copyfiles": "^2.4.1"
+    },
+    "dependencies": {
+      "serve": "^13.0.2"
+    }
+  }
